@@ -20,7 +20,7 @@ const gotoReadmore=()=>{
           <h1 className="text-4xl font-extrabold text-pink-400 mb-4 font-serif">
             Rafiah & Shavaiz – A Little Love Story
           </h1>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed font-mono">
+          <p className="text-gray-700 text-lg sm:text-m mb-6 leading-relaxed font-mono">
             What started with a simple spark turned into a journey full of laughter, memories, and love.
             This page is a small gift from Nida ( aka Chota bheem) to celebrate their journey and the bond they share.
             Wishing you both endless happiness, adventure, and togetherness. Here’s to forever. 💗
@@ -37,11 +37,14 @@ const gotoReadmore=()=>{
 
      
         <div className="flex-1 ">
-          <img
-            src="/w3.png" 
-            alt="Rafiah and Shavaiz"
-            className="rounded-xl shadow-lg w-full  max-w-[250px] object-contain transition-transform duration-300 hover:scale-105"
-          />
+         <video
+  src="/weddingvideo.mp4" // Replace with your actual file path
+  className="rounded-xl shadow-lg w-full max-w-[250px] object-contain transition-transform duration-300 hover:scale-105"
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
         </div>
       </div>
     </div>
