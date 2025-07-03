@@ -101,24 +101,30 @@ export default function Events() {
          Here's a glimpse into their happily ever after.
         </p>
 
-        <div className="relative flex items-center justify-center">
-          {/* Left Chevron */}
-          <button onClick={goLeft} className="absolute left-0 p-2 text-pink-400 hover:text-pink-600">
-            <ChevronLeft size={32} />
-          </button>
+        <div className="relative flex items-center justify-center w-full">
+  {/* Left Chevron */}
+  <button
+    onClick={goLeft}
+    className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/80 rounded-full shadow hover:bg-white"
+  >
+    <ChevronLeft size={28} className="text-pink-500" />
+  </button>
 
-          {/* Current Image */}
-          <img
-            src={images[currentImage]}
-            alt="Life After Marriage"
-            className="rounded-lg object-contain h-64 w-auto mx-auto transition-all duration-500"
-          />
+  {/* Image */}
+  <img
+    src={images[currentImage]}
+    alt="Life After Marriage"
+    className="rounded-lg object-contain h-64 w-auto mx-auto transition-all duration-500"
+  />
 
-          {/* Right Chevron */}
-          <button onClick={goRight} className="absolute right-0 p-2 text-pink-400 hover:text-pink-600">
-            <ChevronRight size={32} />
-          </button>
-        </div>
+  {/* Right Chevron */}
+  <button
+    onClick={goRight}
+    className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/80 rounded-full shadow hover:bg-white"
+  >
+    <ChevronRight size={28} className="text-pink-500" />
+  </button>
+</div>
       </div>
     </div>
   );
